@@ -1,0 +1,1052 @@
+/* Header Styles */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px; /* Set padding */
+    height: 50px; /* Set height */
+    background-color: #FFCB70; /* Set background color */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); /* Add box shadow */
+    z-index: 999; /* Set z-index */
+    position: sticky; /* Make header sticky */
+    top: 0; /* Position from top */
+    left: 0; /* Position from left */
+}
+
+/* Header Logo Styles */
+#header img {
+    width: 200px; /* Set width */
+    height: 170px; /* Set height */
+}
+
+/* Navigation Bar Styles */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none; /* Remove list style */
+    padding: 0 20px; /* Set padding */
+    position: relative; /* Set position */
+}
+
+#navbar li a {
+    text-decoration: none; /* Remove text decoration */
+    font-size: 16px; /* Set font size */
+    font-weight: 600; /* Set font weight */
+    color: black; /* Set text color */
+    transition: 0.3s ease; /* Add transition effect */
+}
+
+/* Cart Icon Styles */
+#navbar li #cart-icon {
+    cursor: pointer; /* Set cursor */
+}
+
+/* Navigation Link Hover Styles */
+#navbar li a:hover,
+#navbar li #cart-icon:hover,
+#navbar li a.active {
+    color: #453212; /* Change text color on hover */
+}
+
+/* Navigation Link Active Styles */
+#navbar li a.active::after,
+#navbar li #cart-icon:hover::after,
+#navbar li a:hover::after {
+    content: ""; /* Empty content */
+    width: 30%; /* Set width */
+    height: 2px; /* Set height */
+    background-color: #5d4419; /* Set background color */
+    position: absolute; /* Set position */
+    bottom: -4px; /* Position from bottom */
+    left: 20px; /* Position from left */
+}
+
+/* Mobile Navigation Styles */
+#mobile {
+    display: none; /* Hide by default */
+    align-items: center; /* Align items */
+}
+
+/* Banner Styles */
+#banner {
+    background-image: url("../img/hero.jpg"); /* Set background image */
+    height: 90vh; /* Set height */
+    background-position: top 45% right 0; /* Set background position */
+    background-size: cover; /* Set background size */
+    padding: 0 80px; /* Set padding */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Set flex direction */
+    align-items: flex-start; /* Align items */
+    justify-content: center; /* Justify content */
+}
+
+/* Banner Heading Styles */
+#banner h4 {
+    color: beige; /* Set text color */
+    margin-bottom: 5px; /* Set margin */
+    font-family: 'Pacifico', cursive; /* Set font family */
+}
+
+#banner h3 {
+    font-size: 45px; /* Set font size */
+    color: beige; /* Set text color */
+    font-weight: bold; /* Set font weight */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    margin-top: 0; /* Set margin */
+}
+
+/* Banner Button Styles */
+#banner button {
+    display: inline-block; /* Display as block */
+    background-color: red; /* Set background color */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    border: none; /* Remove border */
+    color: white; /* Set text color */
+    text-align: center; /* Align text */
+    text-decoration: none; /* Remove text decoration */
+    font-size: 16px; /* Set font size */
+    padding: 10px 20px; /* Set padding */
+    border-radius: 5px; /* Set border radius */
+    cursor: pointer; /* Set cursor */
+    transition: 0.3s; /* Add transition */
+}
+
+/* Banner Button Hover Styles */
+#banner button:hover {
+    background-color: rgb(85, 2, 2); /* Change background color on hover */
+}
+
+/* Section Styles */
+.section-p1 {
+    padding: 40px 80px; /* Set padding */
+}
+
+/* Category Box Image Styles */
+#categories .ce-box img {
+    height: 180px; /* Set height */
+    width: 180px; /* Set width */
+}
+
+/* Category Heading Styles */
+#categorie {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Set font family */
+    font-size: 28px; /* Set font size */
+    text-align: start; /* Set text alignment */
+    margin-left: 100px; /* Set left margin */
+    margin-top: 1px; /* Set top margin */
+    margin-bottom: 0; /* Set bottom margin */
+    margin-right: 0; /* Set right margin */
+}
+
+/* Category Box Styles */
+.section-p1 .ce-box {
+    width: 180px; /* Set width */
+    text-align: center; /* Set text alignment */
+    padding: 10px 15px; /* Set padding */
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03); /* Add box shadow */
+    border: 1px solid rgb(234, 228, 228); /* Set border */
+    border-radius: 4px; /* Set border radius */
+    margin-bottom: 5; /* Set margin bottom */
+    margin-top: 0; /* Set margin top */
+    cursor: pointer; /* Set cursor */
+}
+
+/* Category Box Hover Styles */
+.section-p1 .ce-box:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1); /* Change box shadow on hover */
+}
+
+/* Category Box Heading Styles */
+.section-p1 .ce-box h6 {
+    font-family: Arial, Helvetica, sans-serif; /* Set font family */
+    font-size: 16px; /* Set font size */
+    display: inline-block; /* Display as block */
+    padding: 9px 8px 6px 8px; /* Set padding */
+    line-height: 1; /* Set line height */
+    border-radius: 4px; /* Set border radius */
+    margin: 0 0; /* Set margin */
+}
+
+/* Categories Container Styles */
+#categories {
+    display: flex; /* Use flexbox */
+    align-items: left; /* Align items */
+    flex-wrap: wrap; /* Wrap items */
+}
+
+/* Categories Box Margin Styles */
+#categories .ce-box {
+    margin: 0 20px; /* Set margin */
+}
+
+/* Trend Section Styles */
+#trend {
+    text-align: center; /* Set text alignment */
+}
+
+/* Trend Section Heading Styles */
+#trend h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Set font family */
+    font-size: 28px; /* Set font size */
+    margin: 2px 0; /* Set margin */
+}
+
+/* Trend Section Paragraph Styles */
+#trend p {
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-size: 20px; /* Set font size */
+    margin: 2px 0; /* Set margin */
+}
+
+/* Trend Product Styles */
+#trend .pro {
+    width: 23%; /* Set width */
+    min-width: 250px; /* Set minimum width */
+    padding: 10px 7px; /* Set padding */
+    border: 1px solid #cce7d0; /* Set border */
+    border-radius: 25px; /* Set border radius */
+    cursor: pointer; /* Set cursor */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); /* Add box shadow */
+    margin: 15px 1px; /* Set margin */
+    transition: 0.2s ease; /* Add transition */
+}
+
+/* Trend Product Hover Styles */
+#trend .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1); /* Change box shadow on hover */
+}
+
+/* Trend Product Image Styles */
+#trend .pro img {
+    width: 100%; /* Set width */
+    border-radius: 20px; /* Set border radius */
+}
+/* Trend Product Description Styles */
+#trend .pro .descrip {
+    text-align: start; /* Set text alignment */
+    padding: 5px 0; /* Set padding */
+}
+
+#trend .pro .descrip span {
+    color: #352302; /* Set text color */
+    font-size: 16px; /* Set font size */
+    padding-top: 7px; /* Set padding top */
+    margin-bottom: 1px; /* Set margin bottom */
+}
+
+#trend .pro .descrip h5 {
+    padding-top: 7px; /* Set padding top */
+    margin: 1px 0; /* Set margin */
+    color: #1a1a1a; /* Set text color */
+    font-size: 18px; /* Set font size */
+}
+
+#trend .pro .descrip i {
+    font-size: 18px; /* Set font size */
+    color: rgb(254, 254, 22); /* Set text color */
+    margin: 1px 0; /* Set margin */
+}
+
+#trend .pro .descrip h4 {
+    padding-top: 7px; /* Set padding top */
+    margin: 1px 0; /* Set margin */
+    font-size: 18px; /* Set font size */
+    font-weight: 700; /* Set font weight */
+    color: #088178; /* Set text color */
+    text-shadow: #0a0a0a; /* Add text shadow */
+}
+
+/* Trend Product Container Styles */
+#trend .pro-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Align items */
+    padding-top: 20px; /* Set padding top */
+    flex-wrap: wrap; /* Wrap items */
+}
+
+/* Small Banner Heading Styles */
+#sm-banner h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Set font family */
+    font-size: 30px; /* Set font size */
+    margin: 2px 0; /* Set margin */
+    color: white; /* Set text color */
+    font-weight: 800; /* Set font weight */
+}
+
+/* Small Banner Subheading Styles */
+#sm-banner h4 {
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-size: 20px; /* Set font size */
+    margin: 2px 0; /* Set margin */
+    color: white; /* Set text color */
+    font-weight: 300; /* Set font weight */
+}
+
+/* Small Banner Span Styles */
+#sm-banner span {
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-size: 20px; /* Set font size */
+    margin: 2px 0; /* Set margin */
+    font-weight: 500; /* Set font weight */
+    padding-bottom: 5px; /* Set padding bottom */
+    color: white; /* Set text color */
+}
+
+/* Small Banner Container Styles */
+#sm-banner {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align items */
+    flex-wrap: wrap; /* Wrap items */
+}
+
+/* Small Banner Box Styles */
+#sm-banner .banner-box {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Set flex direction */
+    justify-content: center; /* Align items */
+    align-items: flex-start; /* Align items */
+    padding: 30px; /* Set padding */
+    background-image: url("../img/banner1.jpg"); /* Set background image */
+    min-width: 580px; /* Set minimum width */
+    height: 50vh; /* Set height */
+    background-size: cover; /* Set background size */
+    background-position: center; /* Set background position */
+    cursor: pointer; /* Set cursor */
+}
+
+/* Small Banner Box Button Styles */
+#sm-banner .banner-box button {
+    padding: 5px 10px; /* Set padding */
+    background-color: transparent; /* Set background color */
+    color: #fff; /* Set text color */
+    font-weight: bold; /* Set font weight */
+    border: 2px solid #fff; /* Set border */
+    border-radius: 5px; /* Set border radius */
+    cursor: pointer; /* Set cursor */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Small Banner Box Button Hover Styles */
+#sm-banner .banner-box button:hover {
+    background-color: white; /* Change background color on hover */
+    color: orangered; /* Change text color on hover */
+}
+
+/* Small Banner Box 2 Styles */
+#sm-banner .banner-box2 {
+    background-image: url("../img/banner2.jpg"); /* Set background image */
+    align-items: flex-end; /* Align items */
+}
+
+/* Styles for h1 inside #more .m1 */
+#more .m1 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Set font family */
+    font-size: 55px; /* Set font size */
+    margin: 2px 0; /* Set margin */
+    padding-top: 25px; /* Set padding top */
+    color: white; /* Set text color */
+    font-weight: 800; /* Set font weight */
+    text-align: center; /* Set text alignment */
+    background-color: #FFCB70; /* Set background color */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    width: 100%; /* Set width */
+    height: 80px; /* Set height */
+    font-style: italic; /* Set font style */
+}
+
+/* Footer Styles */
+footer {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Wrap items */
+    justify-content: space-between; /* Align items */
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Footer Column Styles */
+footer .col {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Set flex direction */
+    align-items: flex-start; /* Align items */
+    margin-bottom: 20px; /* Set margin bottom */
+}
+
+/* Footer Heading Styles */
+footer h4 {
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-size: 15px; /* Set font size */
+    padding-bottom: 10px; /* Set padding bottom */
+    margin-bottom: 1px; /* Set margin bottom */
+    align-items: flex-start; /* Align items */
+}
+
+/* Footer Paragraph Styles */
+footer p {
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-size: 13px; /* Set font size */
+    margin: 0 0 8px 0; /* Set margin */
+    padding-top: 0; /* Set padding top */
+}
+
+/* Footer Link Styles */
+footer a {
+    text-decoration: none; /* Remove underline */
+    color: #0a0a0a; /* Set text color */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-size: 13px; /* Set font size */
+    margin: 0 0 10px 0; /* Set margin */
+    cursor: pointer; /* Set cursor */
+}
+
+/* Footer Copyright Styles */
+footer .copyright {
+    text-align: center; /* Set text alignment */
+    width: 100%; /* Set width */
+    padding: 0 0 0 100px; /* Set padding */
+}
+
+/* Footer Icon Styles */
+footer i {
+    cursor: pointer; /* Set cursor */
+    padding: 0 8px; /* Set padding */
+}
+
+/* Footer Column 2 Styles */
+footer .col2 {
+    align-items: center; /* Align items */
+}
+
+/* Hover Styles for Footer Links and Icons */
+footer a:hover,
+footer i:hover {
+    color: #088178; /* Change text color on hover */
+}
+
+/* Media Query for Responsive Navbar */
+@media (max-width: 900px) {
+    /* Navbar Styles */
+    #navbar {
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Set flex direction */
+        align-items: flex-start; /* Align items */
+        justify-content: flex-start; /* Justify content */
+        position: fixed; /* Set position */
+        top: 0; /* Set top position */
+        right: -400px; /* Set right position */
+        height: 100vh; /* Set height */
+        width: 300px; /* Set width */
+        background-color: white; /* Set background color */
+        box-shadow: 0 40px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        padding: 80px 0 0 10px; /* Set padding */
+        transition: 0.3s; /* Add transition */
+    }
+
+    /* Active Navbar Styles */
+    #navbar.active {
+        right: 0; /* Set right position */
+    }
+
+    /* Navbar List Item Styles */
+    #navbar li {
+        margin-bottom: 25px; /* Set margin bottom */
+    }
+
+    /* Mobile Styles */
+    #mobile {
+        display: flex; /* Use flexbox */
+        align-items: center; /* Align items */
+    }
+
+    /* Mobile Icon Styles */
+    #mobile i {
+        text-decoration: none; /* Remove underline */
+        color: #0a0a0a; /* Set text color */
+        padding: 0 10px; /* Set padding */
+        cursor: pointer; /* Set cursor */
+    }
+
+    /* Bar Styles */
+    #bar {
+        z-index: 999; /* Set z-index */
+        margin-right: 35px; /* Set margin right */
+    }
+
+    /* Banner Styles */
+    #banner {
+        height: 70vh; /* Set height */
+        background-position: top 30% left 0; /* Set background position */
+        padding: 0 80px; /* Set padding */
+    }
+
+    /* Header Styles */
+    #header {
+        padding: 20px 41px; /* Set padding */
+    }
+
+    /* Trend Product Styles */
+    #trend .pro {
+        width: 40%; /* Set width */
+        min-width: 250px; /* Set minimum width */
+        margin: 15px 15px; /* Set margin */
+    }
+
+    /* Section Box Styles */
+    .section-p1 .ce-box {
+        width: 120px; /* Set width */
+        margin: 10px 5px; /* Set margin */
+    }
+
+    /* Category Box Image Styles */
+    #categories .ce-box img {
+        height: 120px; /* Set height */
+        width: 120px; /* Set width */
+    }
+
+    /* Small Banner Box Styles */
+    #sm-banner .banner-box {
+        min-width: 100%; /* Set minimum width */
+        height: 30vh; /* Set height */
+    }
+
+    /* Small Banner Styles */
+    #sm-banner {
+        padding-left: 15px; /* Set padding left */
+        display: flex; /* Use flexbox */
+        justify-content: space-between; /* Justify content */
+        flex-wrap: wrap; /* Wrap items */
+    }
+
+    /* Product Banner Styles */
+    #product-banner {
+        height: 48vh; /* Set height */
+    }
+}
+
+
+/* @media (max-width: 477px){
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 23px;
+        width: 90%;
+        height: 25px;
+        background-color: #FFCB70;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    #banner {
+        height: 30vh;
+        width: 180%;
+        background-position: top 30% left 0;
+        padding: 0 80px;
+    }
+#header img{
+    width: 150px;
+    height: 150px;
+}
+
+
+} */
+
+/*product page*/
+
+/* Product Banner Styles */
+#product-banner {
+    background-image: url("../img/banner3.jpg"); /* Set background image */
+    /* width: 100%; */ /* Commented out width */
+    height: 40vh; /* Set height */
+    background-size: cover; /* Set background size */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Align content horizontally */
+    text-align: center; /* Set text alignment */
+    flex-direction: column; /* Set flex direction */
+    padding: 5px; /* Set padding */
+}
+
+/* Product Banner Heading Styles */
+#product-banner h3 {
+    font-size: 85px; /* Set font size */
+    color: beige; /* Set text color */
+    font-weight: bold; /* Set font weight */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    margin-bottom: 0; /* Set margin bottom */
+}
+
+/* Product Banner Paragraph Styles */
+#product-banner p {
+    color: beige; /* Set text color */
+    font-size: 20px; /* Set font size */
+    margin-top: 5px; /* Set margin top */
+    font-family: 'Pacifico', cursive; /* Set font family */
+}
+
+/* Pagination Styles */
+#pagination {
+    text-align: center; /* Set text alignment */
+}
+
+/* Pagination Link Styles */
+#pagination a {
+    text-decoration: none; /* Remove underline */
+    background-color: #088178; /* Set background color */
+    padding: 10px 15px; /* Set padding */
+    border-radius: 4px; /* Set border radius */
+    color: white; /* Set text color */
+    font-weight: 800; /* Set font weight */
+    font-size: 25px; /* Set font size */
+}
+
+/* Single Product Details Image Styles */
+#pro-details .single-pro-image {
+    width: 40%; /* Set width */
+    padding-top: 30px; /* Set padding top */
+    margin-right: 50px; /* Set margin right */
+}
+
+/* Small Image Group Styles */
+.small-img-group {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align content horizontally */
+}
+
+/* Small Image Styles */
+.small-img {
+    flex-basis: 30%; /* Set flex basis */
+    cursor: pointer; /* Set cursor */
+}
+
+/* Single Product Details Styles */
+#pro-details {
+    display: flex; /* Use flexbox */
+    margin-top: 20px; /* Set margin top */
+}
+
+/* Single Product Details Container Styles */
+#pro-details .single-pro-details {
+    width: 50%; /* Set width */
+}
+
+/* Single Product Details Heading Styles */
+#pro-details .single-pro-details h6 {
+    font-size: 15px; /* Set font size */
+    color: black; /* Set text color */
+    font-weight: bold; /* Set font weight */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    margin-bottom: 0; /* Set margin bottom */
+    padding-bottom: 0; /* Set padding bottom */
+}
+
+/* Single Product Details Subheading Styles */
+#pro-details .single-pro-details h4 {
+    font-size: 20px; /* Set font size */
+    color: black; /* Set text color */
+    font-weight: bold; /* Set font weight */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    margin-top: 0; /* Set margin top */
+    padding-top: 0; /* Set padding top */
+}
+
+/* Single Product Details Title Styles */
+#pro-details .single-pro-details h2 {
+    font-size: 30px; /* Set font size */
+    color: black; /* Set text color */
+    font-weight: bold; /* Set font weight */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    margin-top: 0; /* Set margin top */
+    padding-top: 10px; /* Set padding top */
+    margin-bottom: 0; /* Set margin bottom */
+}
+
+/* Single Product Details Input Styles */
+#pro-details .single-pro-details input {
+    width: 50px; /* Set width */
+    height: 47px; /* Set height */
+    padding-left: 5px; /* Set padding left */
+    font-size: 16px; /* Set font size */
+    margin: 10px 10px 10px 0; /* Set margin */
+}
+
+/* Single Product Details Button Styles */
+#pro-details .single-pro-details button {
+    display: inline-block; /* Set display to inline-block */
+    background-color: #088178; /* Set background color */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    border: none; /* Remove border */
+    color: white; /* Set text color */
+    text-align: center; /* Set text alignment */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Set font size */
+    padding: 10px 20px; /* Set padding */
+    border-radius: 5px; /* Set border radius */
+    cursor: pointer; /* Set cursor */
+    transition: 0.3s; /* Add transition */
+}
+
+/* Single Product Details Button Hover Styles */
+#pro-details .single-pro-details button:hover {
+    background-color: green; /* Change background color on hover */
+}
+
+/* Single Product Details Input Focus Styles */
+#pro-details .single-pro-details input:focus {
+    outline: none; /* Remove outline */
+}
+
+/* Single Product Details Paragraph Styles */
+#pro-details .single-pro-details p {
+    line-height: 25px; /* Set line height */
+    color: black; /* Set text color */
+    margin-bottom: 5px; /* Set margin bottom */
+    font-family: 'Pacifico', cursive; /* Set font family */
+}
+
+/* Fieldset Styles */
+fieldset {
+    border: 0; /* Remove border */
+}
+
+/* Label Styles */
+label {
+    display: block; /* Set display to block */
+    margin: 30px 0 0 0; /* Set margin */
+}
+
+/* Overflow Styles */
+.overflow {
+    height: 200px; /* Set height */
+}
+
+/* Available Quantity Styles */
+.single-pro-details #availableQuantity {
+    display: block; /* Set display to block */
+    margin-bottom: 20px; /* Set margin bottom */
+}
+
+/* Demo Label Styles */
+.demo label {
+    margin-top: 5px; /* Set margin top */
+}
+
+/* Header Form Styles */
+#header form {
+    border: 1px solid rgb(252, 240, 7); /* Set border */
+    border-radius: 10px; /* Set border radius */
+    display: flex; /* Use flexbox */
+    background-color: white; /* Set background color */
+    padding: 5px 0px; /* Set padding */
+    padding-left: 15px; /* Set left padding */
+    box-shadow: 5px 5px 30px rgba(246, 235, 17, 0.1); /* Add box shadow */
+}
+/* Header Form Input Styles */
+#header form input {
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    box-shadow: none; /* Remove box shadow */
+    width: 100%; /* Set width to 100% */
+    font-size: 16px; /* Set font size */
+    font-weight: 600; /* Set font weight */
+    padding: 5px 10px; /* Set padding */
+}
+
+/* Header Form Icon Styles */
+#header form i {
+    padding-bottom: 0; /* Set padding bottom to 0 */
+    margin-bottom: 0; /* Set margin bottom to 0 */
+    padding-top: 5px; /* Set padding top */
+}
+
+/* Trend Section Heading Styles */
+#trend .m1 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Set font family */
+    font-size: 55px; /* Set font size */
+    margin: 2px 0; /* Set margin */
+    padding-top: 25px; /* Set padding top */
+    color: white; /* Set text color */
+    font-weight: 800; /* Set font weight */
+    text-align: center; /* Set text alignment */
+    background-color: #FFCB70; /* Set background color */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1); /* Set box shadow */
+    width: 100%; /* Set width to 100% */
+    height: 80px; /* Set height */
+    font-style: italic; /* Set font style */
+}
+
+/* Contact Us Page Styles */
+
+/* Contact Info Container Styles */
+.contact-in {
+    width: 80%; /* Set width */
+    height: auto; /* Set height to auto */
+    margin: auto; /* Center horizontally */
+    margin-bottom: 20px; /* Set margin bottom */
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping */
+    padding: 10px; /* Set padding */
+    border-radius: 10px; /* Set border radius */
+    background-color: #EDE597; /* Set background color */
+    box-shadow: 0px 0px 10px 0px #666; /* Set box shadow */
+}
+
+/* Contact Map Section Styles */
+.contact_map {
+    width: 100%; /* Set width to 100% */
+    height: auto; /* Set height to auto */
+    flex: 50%; /* Set flex basis */
+}
+
+/* Contact Map Iframe Styles */
+.contact_map iframe {
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+}
+
+/* Contact Form Section Styles */
+.contact_form {
+    width: 100%; /* Set width to 100% */
+    height: auto; /* Set height to auto */
+    text-align: center; /* Set text alignment */
+    flex: 50%; /* Set flex basis */
+    padding: 30px; /* Set padding */
+}
+
+/* Contact Form Heading Styles */
+.contact_form h1 {
+    margin-bottom: 10px; /* Set margin bottom */
+}
+
+/* Contact Form Text Input Styles */
+.contact_form-txt {
+    width: 100%; /* Set width to 100% */
+    height: 40px; /* Set height */
+    color: rgba(73, 95, 88, 1); /* Set text color */
+    border: 1px solid #bcbcbc; /* Set border */
+    border-radius: 50px; /* Set border radius */
+    outline: none; /* Remove outline */
+    margin-bottom: 20px; /* Set margin bottom */
+    padding: 15px; /* Set padding */
+}
+
+/* Contact Form Textarea Styles */
+.contact_form-textarea {
+    width: 100%; /* Set width to 100% */
+    height: 130px; /* Set height */
+    color: rgba(73, 95, 88, 1); /* Set text color */
+    border: 1px solid #bcbcbc; /* Set border */
+    border-radius: 10px; /* Set border radius */
+    outline: none; /* Remove outline */
+    margin-bottom: 20px; /* Set margin bottom */
+    padding: 15px; /* Set padding */
+    font-family: 'Poppins', sans-serif; /* Set font family */
+}
+
+/* Contact Form Placeholder Styles */
+.contact_form-txt::placeholder,
+.contact_form-textarea::placeholder {
+    color: #aaa; /* Set placeholder color */
+}
+
+/* Submit Button and Reset Button Styles */
+.ui-button {
+    background-color: #088178 !important; /* Set background color */
+    color: white !important; /* Set text color */
+}
+
+.ui-button:hover {
+    background-color: #cce7d0 !important; /* Change background color on hover */
+    color: black !important; /* Change text color on hover */
+}
+
+/* Topic Section Heading Styles */
+.topic h1 {
+    text-align: center; /* Set text alignment */
+    color: rgba(73, 95, 88, 1); /* Set text color */
+}
+
+/* Topic Section Paragraph Styles */
+.topic p {
+    margin-left: 200px; /* Set left margin */
+    margin-right: 200px; /* Set right margin */
+    padding: 10px; /* Set padding */
+    font-size: 18px; /* Set font size */
+}
+
+/* Contact Cards Section Styles */
+
+/* Contact Cards Container Styles */
+.cards {
+    max-width: 1100px; /* Set max width */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Set text alignment */
+    padding: 30px; /* Set padding */
+}
+
+/* Contact Card Styles */
+.contact {
+    display: flex; /* Use flexbox */
+}
+
+/* Contact Card Content Styles */
+.content {
+    background-color: #EDE597; /* Set background color */
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping */
+    flex: 1; /* Set flex basis */
+    margin: 20px; /* Set margin */
+    padding: 20px; /* Set padding */
+    border: 2px lightyellow; /* Set border */
+    border-radius: 4px; /* Set border radius */
+    transition: all .3s ease; /* Add transition */
+    color: rgba(73, 95, 88, 1); /* Set text color */
+}
+
+/* Contact Card Icon Styles */
+.content .fab {
+    font-size: 70px; /* Set font size */
+    margin: 16px 0; /* Set margin */
+}
+
+/* Contact Card Content Child Styles */
+
+/* Contact Card Content Child Flex Styles */
+.content>* {
+    flex: 1 1 100%; /* Set flex properties */
+}
+
+/* Hover Styles for Contact Card */
+.content:hover {
+    color: #EDE597; /* Change text color on hover */
+    border-color: rgba(73, 95, 88, 1); /* Change border color on hover */
+    background: rgba(73, 95, 88, 1); /* Change background color on hover */
+}
+
+/* Hover Styles for Contact Card Links */
+.content:hover a {
+    background: #EDE597; /* Change background color of links on hover */
+    color: rgba(73, 95, 88, 1); /* Change text color of links on hover */
+}
+
+/* Contact Card Heading Styles */
+.content h2 {
+    font-size: 30px; /* Set font size */
+    margin: 16px 0; /* Set margin */
+    letter-spacing: 1px; /* Set letter spacing */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+/* Contact Card Paragraph Styles */
+.content p {
+    font-size: 17px; /* Set font size */
+    font-family: 'Poppins', sans-serif; /* Set font family */
+}
+
+/* Contact Card Link Styles */
+.content a {
+    margin: 22px 0; /* Set margin */
+    font-size: 15px; /* Set font size */
+    background: rgba(73, 95, 88, 1); /* Set background color */
+    color: white; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    text-transform: uppercase; /* Convert text to uppercase */
+    border: none; /* Remove border */
+    padding: 15px 15px; /* Set padding */
+    border-radius: 25px; /* Set border radius */
+    transition: .3s ease; /* Add transition effect */
+}
+
+/* Hover Styles for Contact Card Links */
+.content a:hover {
+    border-radius: 4px; /* Change border radius on hover */
+}
+
+/* Media Query for Contact Section */
+@media (max-width: 1025px) {
+    .contact {
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Change flex direction to column */
+    }
+    .contact_map {
+        flex: 100%; /* Set flex basis to 100% */
+        height: 250px; /* Set height */
+    }
+}
+
+/* Footer Styles */
+footer {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Align items to space between */
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Footer Column Styles */
+footer .col {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Set flex direction to column */
+    align-items: flex-start; /* Align items to flex-start */
+    margin-bottom: 20px; /* Set margin bottom */
+}
+
+/* Footer Heading Styles */
+footer h4 {
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-size: 15px; /* Set font size */
+    padding-bottom: 10px; /* Set padding bottom */
+    margin-bottom: 1px; /* Set margin bottom */
+    align-items: flex-start; /* Align items to flex-start */
+}
+
+/* Footer Paragraph Styles */
+footer p {
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-size: 13px; /* Set font size */
+    margin: 0 0 8px 0; /* Set margin */
+    padding-top: 0; /* Set padding top */
+}
+
+/* Footer Link Styles */
+footer a {
+    text-decoration: none; /* Remove underline */
+    color: #0a0a0a; /* Set text color */
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-size: 13px; /* Set font size */
+    margin: 0 0 10px 0; /* Set margin */
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Footer Copyright Styles */
+footer .copyright {
+    text-align: center; /* Set text alignment to center */
+    width: 100%; /* Set width to 100% */
+    padding: 0 0 0 100px; /* Set padding */
+}
+
+/* Footer Icon Styles */
+footer i {
+    cursor: pointer; /* Set cursor to pointer */
+    padding: 0 8px; /* Set padding */
+}
+
+/* Center Alignment for Footer Column 2 */
+footer .col2 {
+    align-items: center; /* Align items to center */
+}
+
+/* Hover Styles for Footer Links and Icons */
+footer a:hover,
+footer i:hover {
+    color: #088178; /* Change text color on hover */
+}
+
+/* Label Styles */
+label {
+    display: inline-block; /* Set display to inline-block */
+    width: 5em; /* Set width */
+}

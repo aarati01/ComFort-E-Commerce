@@ -1,0 +1,610 @@
+/* Set height of body to 200px */
+body {
+    height: 200px;
+}
+
+/* Styling for profile header */
+#profile_header {
+    background-color: black;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+/* Styling for side list */
+#sidelist {
+    background-color: rgb(255, 203, 112);
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 3%;
+    float: left;
+    width: 20%;
+    padding-right: 20px;
+    padding-bottom: 20%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for user email */
+#p_email {
+    margin-top: 10%;
+    margin-right: 30%;
+    margin-left: -5%;
+}
+
+/* Styling for main content area */
+#main {
+    background-color: #d7f6fc;
+    width: 90%;
+    margin: 5%;
+    padding: 1.6%;
+    margin-top: 2%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for greeting section */
+#hello_user {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 8%;
+}
+
+/* Styling for user section */
+#user_section {
+    margin-left: 27%;
+}
+
+/* Styling for individual sections */
+#one, #two {
+    background-color: #FFCB70;
+    padding: 2%;
+    margin: 2%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for image */
+#img1 {
+    height: 15px;
+    width: 15px;
+}
+
+/* Styling for header division */
+#head_div {
+    border-radius: 10px;
+    background-color: #131210;
+    color: aliceblue;
+    padding: 0.5%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid layout for header division */
+#head_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Styling for sections within header division */
+#head_div section {
+    grid-column: 1;
+}
+
+/* Styling for divisions within header division */
+#head_div div {
+    grid-column: 2;
+    text-align: right;
+}
+
+/* Styling for updating information */
+#update_info {
+    width: 600px;
+    height: 24px;
+    margin-left: 1%;
+}
+
+/* Styling for profile photo */
+#photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+/* Styling for profile image */
+#photo #profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Styling for profile point */
+#profile_pt {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Styling for email */
+#p_email {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Styling for profile modal */
+.pmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pmodal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+/* Styling for closing button in modal */
+.pclose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hover effect for closing button */
+.pclose:hover,
+.pclose:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Styling for photo options */
+.photoOption {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Styling for modal background */
+.modal, .modal_2, .modal_3, .modal_4 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Styling for modal content */
+.modal-content, .modal-content_2, .modal-content_3, .modal-content_4 {
+    background-color: #e0ddd8;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    text-align: justify;
+    border-radius: 10px;
+}
+
+/* Styling for close button in modal */
+.close, .close_2, .close_3, .close_4 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Hover effect for close button */
+.close:hover,
+.close:focus,
+.close_2:hover,
+.close_2:focus,
+.close_3:hover,
+.close_3:focus,
+.close_4:hover,
+.close_4:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for accordion header */
+.accordion-header {
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Styling for accordion content */
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+/* Styling for active accordion item */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+/* Styling for header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    width: 90%;
+    height: 50px;
+    background-color: #FFCB70;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* Styling for header image */
+#header img {
+    width: 200px;
+    height: 170px;
+}
+/* Styling for navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for navigation bar list items */
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Styling for navigation bar links */
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+/* Hover effect for navigation bar links */
+#navbar li a:hover,
+#navbar li a.active {
+    color: #453212;
+}
+
+/* Styling for active state of navigation bar links */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #5d4419;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Styling for mobile view */
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+/* Styling for footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for footer columns */
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Styling for footer headings */
+footer h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; 
+    padding-bottom: 10px;
+    margin-bottom: 1px;
+    align-items: flex-start;
+}
+
+/* Styling for footer paragraphs */
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px; 
+    margin: 0 0 8px 0;
+    padding-top: 0;
+}
+
+/* Styling for footer links */
+footer a {
+    text-decoration: none;
+    color: #0a0a0a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px; 
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+/* Styling for copyright section in footer */
+footer .copyright {
+    text-align: center;
+    width: 100%;
+    padding: 0 0 0 100px;
+}
+
+/* Styling for icons in footer */
+footer i {
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+/* Styling for center-aligned columns in footer */
+footer .col2 {
+    align-items: center;
+}
+
+/* Hover effect for footer links and icons */
+footer a:hover,
+footer i:hover {
+    color: #088178;
+}
+
+/* Media query for smartphones */
+@media screen and (max-width: 600px) {
+
+    /* Adjustments for side list */
+    #sidelist {
+        margin-bottom: 3%;
+        width: 95%; 
+        padding-right: 0;
+        padding-bottom: 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Adjustments for email paragraph */
+    #p_email {
+        margin-left: 31%;
+    }
+
+    /* Styling for list items in side list */
+    #sidelist ul li {
+        display: flex; /* Use flexbox */
+        flex-direction: column-reverse; 
+        padding-right: 7%;
+    }
+
+    /* Adjustments for main content */
+    #main {
+        float: clear;
+        overflow: auto;
+        display: flex; /* Use flexbox */
+        flex-direction: column; 
+    }
+
+    /* Common styles for elements with IDs one, two, sidelist, and main */
+#one, #two, #sidelist, #main {
+    border-radius: 10px; /* Apply border radius */
+}
+
+/* Styling for profile header */
+#profile_header {
+    background-color: black; /* Set background color */
+    margin-bottom: 0; /* Remove bottom margin */
+    border-radius: 10px; /* Apply border radius */
+}
+
+/* Styles for container one */
+#one {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange elements vertically */
+}
+
+/* Styling for email paragraph */
+#u_email {
+    margin-top: 10%; /* Set top margin */
+}
+
+/* Adjustments for user section */
+#user_section {
+    margin-left: 0; /* Remove left margin */
+}
+
+/* Additional styles for container one */
+#one {
+    background-color: #FFCB70; /* Set background color */
+    padding: 1%; /* Add padding */
+    margin: 2%; /* Add margin */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Apply box shadow */
+}
+
+/* Styles for input fields */
+#f_name, #l_name, #city, #date_of_birth, #zip_code, #phone {
+    margin-top: 3%; /* Set top margin */
+    width: 30%; /* Set width */
+}
+
+/* Additional styles for address input field */
+#address {
+    width: 95%; /* Set width */
+}
+
+/* Styles for update button */
+#update {
+    margin-left: 36%; /* Set left margin */
+}
+
+/* Styles for container two */
+#two {
+    background-color: #FFCB70; /* Set background color */
+    margin: 2%; /* Add margin */
+    padding: 2%; /* Add padding */
+    padding-left: 10%; /* Add left padding */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Apply box shadow */
+    overflow: hidden; /* Hide overflow */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange elements vertically */
+}
+
+/* Additional styles for update information */
+#update_info {
+    width: auto; /* Set width to auto */
+    margin-left: 30%; /* Set left margin */
+}
+
+}
+/* Styles for tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+    /* Adjustments for account settings */
+    #account_settings {
+        padding-left: 6%; /* Add left padding */
+        padding-right: 2%; /* Add right padding */
+    }
+
+    /* Additional styles for input fields */
+    #f_name, #l_name, #city, #date_of_birth, #zip_code, #phone {
+        margin-top: 3%; /* Set top margin */
+        width: 30%; /* Set width */
+    }
+
+    /* Additional adjustments for email paragraph */
+    #p_email {
+        margin-top: 20%; /* Set top margin */
+        margin-left: -16%; /* Adjust left margin */
+    }
+
+    /* Additional adjustments for container one */
+    #one {
+        overflow: auto; /* Allow overflow */
+    }
+
+    /* Additional adjustments for update button */
+    #update {
+        margin-left: 36%; /* Set left margin */
+    }
+
+    /* Additional adjustments for update information */
+    #update_info {
+        width: 55%; /* Set width */
+        margin-left: 15%; /* Set left margin */
+    }
+}
+/* Styles for screen sizes between 60px and 760px */
+@media only screen and (min-width: 60px) and (max-width: 760px) {
+    /* Adjustments for input fields */
+    #first_name, #last_name, #city, #date_of_birth, #postal_code, #phone {
+        width: 32%; /* Set width */
+    }
+    /* Additional adjustments for address input field */
+    #address {
+        width: 82%; /* Set width */
+    }
+    /* Adjustments for update button */
+    #update {
+        margin-left: 30%; /* Set left margin */
+    }
+}
+
+/* Styles for screen sizes between 600px and 900px */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    /* Additional adjustments for address input field */
+    #address {
+        width: 85%; /* Set width */
+    }
+    /* Adjustments for update button */
+    #update {
+        margin-left: 36%; /* Set left margin */
+    }
+    /* Adjustments for sidelist */
+    #sidelist {
+        padding-bottom: 25%; /* Add bottom padding */
+    }
+}
+
+/* Styles for screen sizes between 900px and 1200px */
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    /* Adjustments for email paragraph */
+    #p_email {
+        margin-left: -10%; /* Set left margin */
+    }
+    /* Adjustments for input fields */
+    #first_name, #last_name, #city, #date_of_birth, #postal_code, #phone {
+        width: 30%; /* Set width */
+    }
+    /* Additional adjustments for address input field */
+    #address {
+        width: 82%; /* Set width */
+    }
+    /* Adjustments for update button */
+    #update {
+        margin-left: 36%; /* Set left margin */
+    }
+    /* Adjustments for sidelist */
+    #sidelist {
+        padding-bottom: 25%; /* Add bottom padding */
+    }
+    /* Additional adjustments for input fields */
+    #f_name, #l_name, #city, #date_of_birth, #zip_code, #phone {
+        margin-top: 3%; /* Set top margin */
+        width: 30%; /* Set width */
+    }
+    /* Additional adjustments for update information */
+    #update_info {
+        width: 55%; /* Set width */
+        margin-left: 15%; /* Set left margin */
+    }
+}
+
+/* Styles for screen sizes between 1200px and 1400px */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    /* Adjustments for input fields */
+    #first_name, #last_name, #city, #date_of_birth, #postal_code, #phone {
+        width: 30%; /* Set width */
+    }
+    /* Additional adjustments for address input field */
+    #address {
+        width: 82%; /* Set width */
+    }
+    /* Adjustments for update button */
+    #update {
+        margin-left: 36%; /* Set left margin */
+    }
+    /* Adjustments for sidelist */
+    #sidelist {
+        padding-bottom: 20%; /* Add bottom padding */
+    }
+    /* Adjustments for email paragraph */
+    #p_email {
+        margin-left: -9%; /* Set left margin */
+    }
+}
+
+
+   

@@ -1,0 +1,163 @@
+/* Cart modal styles */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Positioning context */
+    z-index: 9999; /* Set z-index to ensure modal is on top of other elements */
+    left: 0; /* Position from left edge of viewport */
+    top: 0; /* Position from top edge of viewport */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Allow scrolling if content exceeds viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+}
+
+/* Modal Content Styles */
+.modal-content {
+    background-color: #fefefe; /* Background color for modal content */
+    margin: 15% auto; /* Center modal vertically and horizontally */
+    padding: 20px; /* Add padding */
+    border: 1px solid #888; /* Border */
+    width: 80%; /* Set width */
+    max-width: 600px; /* Maximum width */
+    border-radius: 10px; /* Border radius */
+}
+
+/* Cart Items Styles */
+.cart-items {
+    margin-top: 20px; /* Add top margin */
+}
+
+/* Cart Item Styles */
+.cart-item {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+.cart-item img {
+    width: 80px; /* Set image width */
+    height: 80px; /* Set image height */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add right margin */
+}
+
+/* Cart Item Details Styles */
+.cart-item-details h4 {
+    margin: 0; /* Remove margin */
+    font-size: 18px; /* Set font size */
+}
+
+.cart-item-details p {
+    margin: 5px 0; /* Set margin */
+    font-size: 16px; /* Set font size */
+}
+
+/* Cart Buttons Styles */
+.cart-buttons {
+    margin-top: 20px; /* Add top margin */
+    text-align: right; /* Align buttons to the right */
+}
+
+/* Close Button Styles */
+.close {
+    color: #aaa; /* Set color */
+    float: right; /* Float to the right */
+    font-size: 28px; /* Set font size */
+    font-weight: bold; /* Set font weight */
+    cursor: pointer; /* Set cursor */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Change color on hover/focus */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Set cursor */
+}
+
+/* Checkout Button Styles */
+#checkoutBtn {
+    background-color: #4CAF50; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Set padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline block */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Set margin */
+    cursor: pointer; /* Set cursor */
+    border-radius: 5px; /* Set border radius */
+}
+
+#checkoutBtn:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
+
+/* Quantity Control Buttons Styles */
+.quantity-controls {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+}
+
+.quantity-btn {
+    background-color: #ddd; /* Set background color */
+    border: none; /* Remove border */
+    color: #333; /* Set text color */
+    font-size: 18px; /* Set font size */
+    cursor: pointer; /* Set cursor */
+    padding: 5px 10px; /* Set padding */
+    margin: 0 5px; /* Set margin */
+    border-radius: 5px; /* Set border radius */
+}
+
+.quantity-btn:hover {
+    background-color: #ccc; /* Change background color on hover */
+}
+
+/* Close Button Styles for Cart Buttons */
+.cart-buttons button#closeCartBtn {
+    color: #fff; /* Set text color */
+    background-color: #ff4500; /* Set background color */
+    font-size: 16px; /* Set font size */
+    font-weight: bold; /* Set font weight */
+    padding: 8px 16px; /* Set padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Set border radius */
+    cursor: pointer; /* Set cursor */
+    margin-right: 10px; /* Add right margin */
+}
+
+.cart-buttons button#closeCartBtn:hover {
+    background-color: #ff6347; /* Change background color on hover */
+}
+
+/* Quantity Buttons Styles */
+#decrementQuantityBtn,
+#incrementQuantityBtn {
+    margin-left: 10px; /* Add left margin */
+}
+
+/* Cart Quantity Span Styles */
+#cart-quantity {
+    position: absolute; /* Positioning context */
+    top: -5px; /* Adjust top position */
+    right: -5px; /* Adjust right position */
+    background-color: red; /* Set background color */
+    color: white; /* Set text color */
+    font-size: 12px; /* Set font size */
+    padding: 3px 6px; /* Set padding */
+    border-radius: 50%; /* Make it a circle */
+}
+
+/* Total Price Container Styles */
+.total-price-container {
+    margin-top: 20px; /* Add top margin */
+}
+
+.total-price-container p {
+    font-size: 18px; /* Set font size */
+}
+
+.total-price-container hr {
+    margin-top: 20px; /* Add top margin */
+}

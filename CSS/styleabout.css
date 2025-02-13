@@ -1,0 +1,740 @@
+/* Styling for the header section */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px; /* Padding for the header */
+    height: 50px; /* Height of the header */
+    background-color: #FFCB70; /* Background color of the header */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); /* Box shadow for the header */
+    z-index: 999; /* Z-index to ensure header stays on top */
+    position: sticky; /* Make the header sticky */
+    top: 0;
+    left: 0;
+}
+
+/* Styling for the logo within the header */
+#header img {
+    width: 200px; /* Width of the logo */
+    height: 170px; /* Height of the logo */
+}
+
+/* Styling for the navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for navigation bar items */
+#navbar li {
+    list-style: none;
+    padding: 0 20px; /* Padding for each navigation item */
+    position: relative;
+}
+
+/* Styling for navigation links */
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+/* Styling for navigation links on hover */
+#navbar li a:hover,
+#navbar li a.active {
+    color: #453212; /* Color change on hover or when active */
+}
+
+/* Styling for the underline effect on navigation links */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%; /* Width of the underline */
+    height: 2px; /* Height of the underline */
+    background-color: #5d4419; /* Color of the underline */
+    position: absolute;
+    bottom: -4px;
+    left: 20px; /* Position of the underline */
+}
+
+/* Styling for the mobile navigation */
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+/* Styling for the banner section */
+#banner {
+    background-image: url("../img/hero.jpg"); /* Background image for the banner */
+    height: 90vh; /* Height of the banner */
+    width: 90%; /* Width of the banner */
+    background-position: top 45% right 0;
+    background-size: cover;
+    padding: 0 80px; /* Padding for the banner */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Styling for heading within the banner */
+#banner h4 {
+    color: beige; /* Color of the heading */
+    margin-bottom: 5px; /* Bottom margin for the heading */
+    font-family: 'Pacifico', cursive; /* Font family for the heading */
+}
+
+/* Styling for subheading within the banner */
+#banner h3 {
+    font-size: 45px; /* Font size for the subheading */
+    color: beige; /* Color of the subheading */
+    font-weight: bold; /* Font weight for the subheading */
+    font-family: 'Montserrat', sans-serif; /* Font family for the subheading */
+    margin-top: 0; /* Top margin for the subheading */
+}
+
+/* Styling for button within the banner */
+#banner button {
+    display: inline-block;
+    background-color: red; /* Background color of the button */
+    font-family: 'Montserrat', sans-serif; /* Font family for the button */
+    border: none;
+    color: white; /* Text color of the button */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px; /* Font size of the button */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Border radius for the button */
+    cursor: pointer;
+    transition: 0.3s; /* Transition effect for the button */
+}
+
+/* Styling for button hover effect within the banner */
+#banner button:hover {
+    background-color: rgb(85, 2, 2); /* Color change on hover */
+}
+
+/* Padding for sections with class 'section-p1' */
+.section-p1 {
+    padding: 40px 80px; /* Padding for top and bottom */
+}
+
+/* Styling for images within 'ce-box' class inside '#categories' */
+#categories .ce-box img {
+    height: 180px; /* Height of the images */
+    width: 180px; /* Width of the images */
+}
+
+/* Styling for the category section */
+#categorie {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family for the category title */
+    font-size: 28px; /* Font size for the category title */
+    text-align: start; /* Text alignment for the category title */
+    margin-left: 100px; /* Left margin for the category title */
+    margin-top: 1px; /* Top margin for the category title */
+    margin-bottom: 0; /* Bottom margin for the category title */
+    margin-right: 0; /* Right margin for the category title */
+}
+
+/* Styling for the product boxes within section-p1 */
+.section-p1 .ce-box {
+    width: 180px; /* Width of the product box */
+    text-align: center; /* Text alignment within the product box */
+    padding: 10px 15px; /* Padding for the product box */
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03); /* Box shadow for the product box */
+    border: 1px solid rgb(234, 228, 228); /* Border for the product box */
+    border-radius: 4px; /* Border radius for the product box */
+    margin-bottom: 5; /* Bottom margin for the product box */
+    margin-top: 0; /* Top margin for the product box */
+    cursor: pointer; /* Cursor style for the product box */
+}
+
+/* Styling for the hover effect on product boxes */
+.section-p1 .ce-box:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1); /* Box shadow on hover */
+}
+
+/* Styling for the heading within product boxes */
+.section-p1 .ce-box h6 {
+    font-family: Arial, Helvetica, sans-serif; /* Font family for the heading */
+    font-size: 16px; /* Font size for the heading */
+    display: inline-block;
+    padding: 9px 8px 6px 8px; /* Padding for the heading */
+    line-height: 1;
+    border-radius: 4px; /* Border radius for the heading */
+    margin: 0; /* Margin for the heading */
+}
+
+/* Styling for the category container */
+#categories {
+    display: flex; /* Flex display for the category container */
+    align-items: left; /* Alignment of items within the category container */
+    flex-wrap: wrap; /* Allowing items to wrap within the category container */
+}
+
+/* Styling for the product boxes within the category container */
+#categories .ce-box {
+    margin: 0 20px; /* Margin for each product box within the category container */
+}
+
+/* Styling for the trend section */
+#trend {
+    text-align: center; /* Text alignment for the trend section */
+}
+
+/* Styling for the heading within the trend section */
+#trend h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family for the heading */
+    font-size: 28px; /* Font size for the heading */
+    margin: 2px 0; /* Margin for the heading */
+}
+
+/* Styling for paragraphs within the trend section */
+#trend p {
+    font-family: 'Montserrat', sans-serif; /* Font family for the paragraphs */
+    font-size: 20px; /* Font size for the paragraphs */
+    margin: 2px 0; /* Margin for the paragraphs */
+}
+
+/* Styling for product containers within the trend section */
+#trend .pro {
+    width: 23%; /* Width of the product container */
+    min-width: 250px; /* Minimum width of the product container */
+    padding: 10px 7px; /* Padding for the product container */
+    border: 1px solid #cce7d0; /* Border for the product container */
+    border-radius: 25px; /* Border radius for the product container */
+    cursor: pointer; /* Cursor style for the product container */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); /* Box shadow for the product container */
+    margin: 15px 1px; /* Margin for the product container */
+    transition: 0.2s ease; /* Transition effect for the product container */
+}
+
+/* Styling for hover effect on product containers within the trend section */
+#trend .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1); /* Box shadow on hover */
+}
+
+/* Styling for images within product containers */
+#trend .pro img {
+    width: 100%; /* Width of the images */
+    border-radius: 20px; /* Border radius for the images */
+}
+
+/* Styling for product description within product containers */
+#trend .pro .descrip {
+    text-align: start; /* Text alignment for the product description */
+    padding: 5px 0; /* Padding for the product description */
+}
+
+/* Styling for spans within product descriptions */
+#trend .pro .descrip span {
+    color: #352302; /* Color of the spans */
+    font-size: 16px; /* Font size for the spans */
+    padding-top: 7px; /* Top padding for the spans */
+    margin-bottom: 1px; /*margin for bottom*/
+}
+/* Styling for the heading within product descriptions */
+#trend .pro .descrip h5 {
+    padding-top: 7px; /* Top padding for the heading */
+    margin: 1px 0; /* Margin for the heading */
+    color: #1a1a1a; /* Text color for the heading */
+    font-size: 18px; /* Font size for the heading */
+}
+
+/* Styling for icons within product descriptions */
+#trend .pro .descrip i {
+    font-size: 18px; /* Font size for the icon */
+    color: rgb(254, 254, 22); /* Color for the icon */
+    margin: 1px 0; /* Margin for the icon */
+}
+
+/* Styling for secondary headings within product descriptions */
+#trend .pro .descrip h4 {
+    padding-top: 7px; /* Top padding for the secondary heading */
+    margin: 1px 0; /* Margin for the secondary heading */
+    font-size: 18px; /* Font size for the secondary heading */
+    font-weight: 700; /* Font weight for the secondary heading */
+    color: #088178; /* Text color for the secondary heading */
+    text-shadow: #0a0a0a; /* Text shadow for the secondary heading */
+}
+
+/* Styling for the product container */
+#trend .pro-container {
+    display: flex; /* Flex display for the product container */
+    justify-content: space-around; /* Justify content within the product container */
+    padding-top: 20px; /* Top padding for the product container */
+    flex-wrap: wrap; /* Allow items to wrap within the product container */
+}
+
+/* Styling for the heading within the small banner */
+#sm-banner h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family for the heading */
+    font-size: 35px; /* Font size for the heading */
+    margin: 2px 0; /* Margin for the heading */
+    color: white; /* Text color for the heading */
+    font-weight: 800; /* Font weight for the heading */
+}
+
+/* Styling for the secondary heading within the small banner */
+#sm-banner h4 {
+    font-family: 'Montserrat', sans-serif; /* Font family for the secondary heading */
+    font-size: 20px; /* Font size for the secondary heading */
+    margin: 2px 0; /* Margin for the secondary heading */
+    color: white; /* Text color for the secondary heading */
+    font-weight: 300; /* Font weight for the secondary heading */
+}
+/* Styling for the text within the small banner */
+#sm-banner span {
+    font-family: 'Montserrat', sans-serif; /* Font family for the text */
+    font-size: 20px; /* Font size for the text */
+    margin: 2px 0; /* Margin for the text */
+    font-weight: 500; /* Font weight for the text */
+    padding-bottom: 5px; /* Bottom padding for the text */
+    color: white; /* Text color */
+}
+
+/* Styling for the small banner container */
+#sm-banner {
+    display: flex; /* Flex display for the small banner */
+    justify-content: space-between; /* Space between items within the small banner */
+    flex-wrap: wrap; /* Allow items to wrap within the small banner */
+}
+
+/* Styling for the individual banner boxes */
+#sm-banner .banner-box {
+    display: flex; /* Flex display for the banner box */
+    flex-direction: column; /* Flex direction */
+    justify-content: center; /* Center content vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 30px; /* Padding for the banner box */
+    background-image: url("../img/banner1.jpg"); /* Background image */
+    min-width: 580px; /* Minimum width for the banner box */
+    height: 50vh; /* Height of the banner box */
+    background-size: cover; /* Background size */
+    background-position: center; /* Background position */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Styling for the hover effect on buttons within banner boxes */
+#sm-banner .banner-box button:hover {
+    cursor: pointer; /* Cursor style on hover */
+}
+
+/* Additional styling for the second banner box */
+#sm-banner .banner-box2 {
+    background-image: url("../img/banner2.jpg"); /* Background image for the second banner box */
+    align-items: flex-end; /* Align items to the end for the second banner box */
+}
+/* Styling for the heading within the #more section */
+#more .m1 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family for the heading */
+    font-size: 55px; /* Font size for the heading */
+    margin: 2px 0; /* Margin for the heading */
+    padding-top: 25px; /* Top padding for the heading */
+    color: white; /* Text color */
+    font-weight: 800; /* Font weight for the heading */
+    text-align: center; /* Text alignment */
+    background-color: #FFCB70; /* Background color for the heading */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1); /* Box shadow for the heading */
+    width: 100%; /* Width of the heading */
+    height: 80px; /* Height of the heading */
+    font-style: italic; /* Italic font style */
+}
+
+/* Styling for the footer section */
+footer {
+    display: flex; /* Flex display for the footer */
+    flex-wrap: wrap; /* Allow items to wrap within the footer */
+    justify-content: space-between; /* Space between items within the footer */
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.1); /* Box shadow for the footer */
+}
+
+/* Styling for columns within the footer */
+footer .col {
+    display: flex; /* Flex display for columns */
+    flex-direction: column; /* Flex direction */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 20px; /* Bottom margin for columns */
+}
+
+/* Styling for headings within footer columns */
+footer h4 {
+    font-family: 'Montserrat', sans-serif; /* Font family for headings */
+    font-size: 15px; /* Font size for headings */
+    padding-bottom: 10px; /* Bottom padding for headings */
+    margin-bottom: 1px; /* Bottom margin for headings */
+    align-items: flex-start; /* Align items to the start */
+}
+
+/* Styling for paragraphs within footer columns */
+footer p {
+    font-family: 'Montserrat', sans-serif; /* Font family for paragraphs */
+    font-size: 13px; /* Font size for paragraphs */
+    margin: 0 0 8px 0; /* Margin for paragraphs */
+    padding-top: 0; /* Top padding for paragraphs */
+}
+
+/* Styling for links within footer columns */
+footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: #0a0a0a; /* Text color for links */
+    font-family: 'Montserrat', sans-serif; /* Font family for links */
+    font-size: 13px; /* Font size for links */
+    margin: 0 0 10px 0; /* Margin for links */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Styling for the copyright section in the footer */
+footer .copyright {
+    text-align: center; /* Text alignment */
+    width: 100%; /* Width of the copyright section */
+    padding: 0 0 0 100px; /* Padding for the copyright section */
+}
+
+/* Styling for icons within the footer */
+footer i {
+    cursor: pointer; /* Cursor style for icons */
+    padding: 0 8px; /* Padding for icons */
+}
+
+/* Additional styling for columns within the footer */
+footer .col2 {
+    align-items: center; /* Align items to the center */
+}
+
+/* Styling for hover effects on links and icons within the footer */
+footer a:hover,
+footer i:hover {
+    color: #088178; /* Text color on hover */
+}
+
+
+/* Media query for screens with a maximum width of 900px */
+@media (max-width: 900px) {
+    /* Styling for the navbar */
+    #navbar {
+        display: flex; /* Flex display for the navbar */
+        flex-direction: column; /* Flex direction */
+        align-items: flex-start; /* Align items to the start */
+        justify-content: flex-start; /* Justify content to the start */
+        position: fixed; /* Fixed positioning */
+        top:0; /* Distance from the top */
+        right: -400px; /* Initial position outside the viewport */
+        height: 100vh; /* Full height of the viewport */
+        /* width: 300px; */ /* Width of the navbar */
+        background-color: white; /* Background color */
+        box-shadow: 0 40px rgba(0, 0, 0, 0.1); /* Box shadow */
+        padding: 80px 0 0 10px; /* Padding */
+        transition: 0.3s; /* Transition effect */
+    }
+    /* Styling for the active state of the navbar */
+    #navbar.active {
+        right: 0; /* Move navbar to the right */
+    }
+    /* Styling for list items within the navbar */
+    #navbar li {
+        margin-bottom: 25px; /* Bottom margin for list items */
+    }
+    /* Styling for the mobile navigation */
+    #mobile {
+        display: flex; /* Flex display for mobile navigation */
+        align-items: center; /* Align items to the center */
+    }
+    /* Styling for icons within mobile navigation */
+    #mobile i {
+        text-decoration: none; /* Remove underline from icons */
+        color: #0a0a0a; /* Text color */
+        padding: 0 10px; /* Padding */
+        cursor: pointer; /* Cursor style */
+    }
+    /* Styling for the bag icon */
+    #bag {
+        display: none; /* Hide the bag icon */
+    }
+    /* Styling for the banner */
+    #banner {
+        height: 70vh; /* Height of the banner */
+        width: 80%; /* Width of the banner */
+        background-position: top 30% left 0; /* Background position */
+        padding: 0 80px; /* Padding */
+    }
+    /* Styling for the header */
+    #header {
+        padding: 20px 41px; /* Padding for the header */
+    }
+    /* Styling for product items within the trending section */
+    #trend .pro {
+        width: 40%; /* Width of product items */
+        min-width: 250px; /* Minimum width of product items */
+        margin: 15px 15px; /* Margin */
+    }
+    /* Styling for category boxes within the section-p1 */
+    .section-p1 .ce-box {
+        width: 120px; /* Width of category boxes */
+        margin: 10px 5px; /* Margin */
+    }
+    /* Styling for images within category boxes */
+    #categories .ce-box img {
+        height: 120px; /* Height of images */
+        width: 120px; /* Width of images */
+    }
+    /* Styling for banner boxes within the sm-banner */
+    #sm-banner .banner-box {
+        min-width: 100%; /* Minimum width of banner boxes */
+        height: 30vh; /* Height of banner boxes */
+    }
+    /* Styling for the sm-banner */
+    #sm-banner {
+        padding-left: 15px; /* Left padding */
+        display: flex; /* Flex display for the sm-banner */
+        justify-content: space-between; /* Space between items */
+        flex-wrap: wrap; /* Allow items to wrap within the sm-banner */
+    }
+}
+
+/* Media query for screens with a maximum width of 477px */
+@media (max-width: 477px) {
+    /* Styling for the header */
+    #header {
+        display: flex; /* Flex display for the header */
+        align-items: center; /* Align items to the center */
+        justify-content: space-between; /* Space between items */
+        padding: 20px 23px; /* Padding */
+        width: 90%; /* Width of the header */
+        height: 25px; /* Height of the header */
+        background-color: #FFCB70; /* Background color */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); /* Box shadow */
+        z-index: 999; /* Z-index */
+        position: sticky; /* Sticky positioning */
+        top: 0; /* Distance from the top */
+        left: 0; /* Distance from the left */
+    }
+    /* Styling for the banner */
+    #banner {
+        height: 30vh; /* Height of the banner */
+        width: 180%; /* Width of the banner */
+        background-position: top 30% left 0; /* Background position */
+        padding: 0 80px; /* Padding */
+    }
+    /* Styling for images within the header */
+    #header img {
+        width: 150px; /* Width of the image */
+        height: 150px; /* Height of the image */
+    }
+
+} 
+
+/* PRODUCT PAGE */
+/* Styling for the product banner */
+#product-banner {
+    background-image: url("../img/banner3.jpg"); /* Background image */
+    width: 100%; /* Width of the banner */
+    height: 40vh; /* Height of the banner */
+    background-size: cover; /* Background size */
+    display: flex; /* Flex display for the banner */
+    justify-content: center; /* Justify content to the center */
+    text-align: center; /* Text alignment */
+    flex-direction: column; /* Flex direction */
+    padding: 5px; /* Padding */
+}
+/* Styling for headings within the product banner */
+#product-banner h3 {
+    font-size: 45px; /* Font size */
+    color: beige; /* Text color */
+    font-weight: bold; /* Font weight */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    margin-bottom: 0; /* Bottom margin */
+}
+/* Styling for paragraphs within the product banner */
+#product-banner p {
+    color: beige; /* Text color */
+    margin-top: 5px; /* Top margin */
+    font-family: 'Pacifico', cursive; /* Font family */
+}
+/* Styling for pagination */
+#pagination {
+    text-align: center; /* Text alignment */
+}
+/* Styling for pagination links */
+#pagination a {
+    text-decoration: none; /* Remove underline */
+    background-color: #088178; /* Background color */
+    padding: 10px 15px; /* Padding */
+    border-radius: 4px; /* Border radius */
+    color: white; /* Text color */
+    font-weight: 800; /* Font weight */
+    font-size: 25px; /* Font size */
+}
+/* Styling for single product image within product details */
+#pro-details .single-pro-image {
+    width: 40%; /* Width of the image */
+    margin-right: 50px; /* Right margin */
+}
+/* Styling for small image group */
+.small-img-group {
+    display: flex; /* Flex display for the group */
+    justify-content: space-between; /* Space between items */
+}
+/* Styling for small images */
+.small-img {
+    flex-basis: 30%; /* Basis for flex items */
+    cursor: pointer; /* Cursor style */
+}
+/* Styling for product details */
+#pro-details {
+    display: flex; /* Flex display for details */
+    margin-top: 20px; /* Top margin */
+}
+/* Styling for single product details */
+#pro-details .single-pro-details {
+    width: 50%; /* Width of details */
+}
+/* Styling for headings within single product details */
+#pro-details .single-pro-details h6 {
+    font-size: 15px; /* Font size */
+    color: black; /* Text color */
+    font-weight: bold; /* Font weight */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    margin-bottom: 0; /* Bottom margin */
+    padding-bottom: 0; /* Bottom padding */
+}
+/* Styling for headings within single product details */
+#pro-details .single-pro-details h4 {
+    font-size: 20px; /* Font size */
+    color: black; /* Text color */
+    font-weight: bold; /* Font weight */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    margin-top: 0; /* Top margin */
+    padding-top: 0; /* Top padding */
+}
+/* Styling for headings within single product details */
+#pro-details .single-pro-details h2 {
+    font-size: 30px; /* Font size */
+    color: black; /* Text color */
+    font-weight: bold; /* Font weight */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    margin-top: 0; /* Top margin */
+    padding-top: 10px; /* Top padding */
+}
+/* Styling for select element within single product details */
+#pro-details .single-pro-details select {
+    display: block; /* Block display */
+    padding: 5px 10px; /* Padding */
+}
+/* Styling for input elements within single product details */
+#pro-details .single-pro-details input {
+    width: 50px; /* Width */
+    height: 47px; /* Height */
+    padding-left: 5px; /* Left padding */
+    font-size: 16px; /* Font size */
+    margin: 10px 10px 10px 0; /* Margin */
+}
+/* Styling for buttons within single product details */
+#pro-details .single-pro-details button {
+    display: inline-block; /* Inline-block display */
+    background-color: #088178; /* Background color */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    border: none; /* Border */
+    color: white; /* Text color */
+    text-align: center; /* Text alignment */
+    text-decoration: none; /* Text decoration */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Cursor */
+    transition: 0.3s; /* Transition effect */
+}
+/* Hover styling for buttons within single product details */
+#pro-details .single-pro-details button:hover {
+    background-color: green; /* Background color */
+}
+/* Styling for inputs when focused within single product details */
+#pro-details .single-pro-details input:focus {
+    outline: none; /* Remove outline */
+}
+/* Styling for spans within single product details */
+#pro-details .single-pro-details span {
+    line-height: 25px; /* Line height */
+    color: black; /* Text color */
+    margin-bottom: 5px; /* Bottom margin */
+    font-family: 'Pacifico', cursive; /* Font family */
+}
+
+/* Reset default browser styles */
+/* Set width, margin, and padding for HTML and body */
+html, body {
+    width: 100%; /* Full width */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Set background image for wrapper */
+.wrapper {
+    background-image: url("../img/pexels-lil-artsy-1159670.jpg"); /* Background image */
+    background-size: cover; /* Cover background */
+    background-position: center; /* Center background */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Flex container for content */
+.container {
+    display: flex; /* Flex display */
+    flex-direction: row; /* Row direction */
+    align-items: center; /* Align items in center */
+    padding: 20px; /* Padding */
+}
+
+/* Style for header image */
+.headerImg img {
+    display: flex; /* Flex display */
+    border-radius: 50%; /* Rounded border for circular image */
+    max-width: 410px; /* Maximum width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    overflow: hidden; /* Hide overflow to prevent scaling issues */
+    transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for header image */
+.headerImg img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+/* Text styles */
+.text {
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Top margin */
+    color: white; /* Set text color */
+}
+
+/* Additional heading styles */
+#heading1o {
+    font-size: 50px; /* Font size */
+    font-weight: bold; /* Set font weight */
+    text-decoration: underline; /* Underline text */
+}
+
+.headingAbout {
+    font-size: 66px; /* Font size */
+    color: white; /* Set text color */
+}
+
+.heading2_theme {
+    font-size: 36px; /* Font size */
+    color: #feb236; /* Custom text color */
+}
+
+.heading3 {
+    font-size: 24px; /* Font size */
+    color: wheat; /* Set text color */
+}
+
+.paragraphlast {
+    text-align: left; /* Left-align text */
+    margin-left: auto; /* Margin on left */
+    color: white; /* Set text color */
+}
+

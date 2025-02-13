@@ -1,0 +1,252 @@
+<!-- Author:= Group 7
+Members:-
+Aditye Raj Gupta
+Madhavi Neupane
+Ashveen Kaur
+Aarati Thapa
+Nishan Sapkota
+
+Comfort +, E commerce website
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c5017c04fb.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="../js/script.js"></script>
+        
+    
+
+        <link rel="stylesheet" href="../CSS/cart.css">
+        <script src="../JS/cart.js"></script>
+    </head>
+    <body>
+        
+    <section id="header">
+            <a href="#"><img src="../img/comfort.PNG"></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="user_info.php">Profile</a></li>
+                    <li><i id="cart-icon" class="fa fa-shopping-bag" aria-hidden="true"></i><span id="cart-quantity"></span></li>
+                </ul>
+            </div>
+            <div id="mobile">
+                <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+    
+            </div>
+        </section>
+    
+    
+        <!-- HTML structure for the cart modal -->
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <span id="closeCartModalBtn" class="close">&times;</span>
+                <h2>Cart</h2>
+                <div id="cartItems" class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <div id="cartActions" class="cart-actions">
+                    <button id="decrementQuantityBtn">-</button>
+                    <button id="incrementQuantityBtn">+</button>
+                </div>
+                <div class="cart-buttons">
+                    <button id="checkoutBtn">Checkout</button>
+                    <button id="closeCartBtn">Close</button>
+                </div>
+            </div>
+            <div id="totalPriceContainer" class="total-price-container">
+                <hr>
+                <p>Total Price: <span id="totalPrice">0.00</span></p>
+            </div>
+            
+        </div>
+    </section>
+
+    <main>
+        <!-- Contact information cards -->
+        <div class="cards">
+            <!-- Location card -->
+            <div class="contact">
+                <div class="content">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2>Location</h2>
+                    <p>3512 King street w<br>Toronto, ON, L0R 2E6</p>
+                    <div class="hover">
+                        <a href="https://maps.app.goo.gl/RGePrntuVdLt6x9f7">View on Google Maps</a>
+                    </div>
+                </div>
+                <!-- Contact card -->
+                <div class="content">
+                    <i class="fa-solid fa-phone"></i>
+                    <h2>Contact</h2>
+                    <p>(416) 362-1777 <br> From 8am to 5 pm<br>Email Us</p>
+                    <div class="hover">
+                        <a href="#contact_form">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact information and map -->
+        <div class="contact-in">
+            <!-- Map -->
+            <div class="contact_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.138876877434!2d-79.39975132394103!3d43.64527887110254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d94cc46495%3A0xe84aa69ccb3d9657!2s512%20King%20St%20W%2C%20Toronto%2C%20ON%20M5V%203M4!5e0!3m2!1sen!2sca!4v1711890298160!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Contact form -->
+            <div id="contact_form" class="contact_form">
+                <h1>Contact Us</h1>
+                <form>
+                    <input type="text" name="fname" placeholder="Enter first Name" class="contact_form-txt" title="Enter your first name." required>
+                    <input type="text" name="lname" placeholder="Enter last Name" class="contact_form-txt" title="Enter your last name." required>
+                    <input type="email" placeholder="Email" class="contact_form-txt" title="Enter your email here." required>
+                    <textarea placeholder="How can we help you?" class="contact_form-textarea" required ></textarea>
+                    <!-- <input type="Submit" name="submit" class="contact_form-btn"> -->
+                    <input type="Submit" name="submit" class="ui-button ui-widget ui-corner-all">
+                </form>    
+            </div>
+        </div>
+    </main>
+    <footer class="section-p1">
+        <!-- Contact information -->
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 512 King street w, Toronto</p>
+            <p><strong>Phone:</strong> (+1)4376666669</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Sat</p>
+        </div>
+        <!-- Follow Us section -->
+        <div class="col col2">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <!-- About section -->
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <!-- Copyright notice -->
+        <div class="copyright">
+            <p>&copy; 2024, Comfort+</p>
+        </div>
+    </footer>
+    
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const cartIcon = document.getElementById("cart-icon");
+        const cartModal = document.getElementById("cartModal");
+        const closeCartBtn = document.getElementById("closeCartBtn");
+        const closeCartModalBtn = document.getElementById("closeCartModalBtn");
+        const checkoutBtn = document.getElementById("checkoutBtn");
+        const cartItemsContainer = document.getElementById("cartItems");
+        const totalPriceDisplay = document.getElementById("totalPrice");
+        const decrementQuantityBtn = document.getElementById("decrementQuantityBtn");
+        const incrementQuantityBtn = document.getElementById("incrementQuantityBtn");
+        const cartQuantitySpan = document.getElementById("cart-quantity");
+    
+        // Retrieve cart items from localStorage or initialize an empty array
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    
+        // Function to save cart items to localStorage
+        function saveCartItems() {
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        }
+    
+        // Function to remove an item from the cart
+        function removeFromCart(productName) {
+            cartItems = cartItems.filter(item => item.name !== productName);
+            saveCartItems();
+            renderCart();
+        }
+    
+        // Function to render the cart items in the cart modal
+        function renderCart() {
+            cartItemsContainer.innerHTML = '';
+            let totalPrice = 0;
+    
+            cartItems.forEach(item => {
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+                    <img src="${item.image}" alt="Product Image">
+                    <div class="cart-item-details">
+                        <h4>${item.name}</h4>
+                        <p>Price: $${item.price.toFixed(2)}</p>
+                        <p>Quantity: ${item.quantity}</p>
+                        <p>Total: $${item.totalPrice.toFixed(2)}</p>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(cartItem);
+                totalPrice += item.totalPrice;
+            });
+    
+            totalPriceDisplay.textContent = `$${totalPrice.toFixed(2)}`;
+        }
+    
+        // Event listener for clicking the cart icon to show the cart modal
+        cartIcon.addEventListener("click", function() {
+            cartModal.style.display = "block";
+            renderCart(); // Render the cart items when the modal is opened
+        });
+    
+        // Event listener for closing the cart modal using the close button
+        closeCartBtn.addEventListener("click", function() {
+            cartModal.style.display = "none";
+        });
+    
+        // Event listener for closing the cart modal using the close button inside the modal
+        closeCartModalBtn.addEventListener("click", function() {
+            cartModal.style.display = "none";
+        });
+    
+        // Event listener for the checkout button
+        checkoutBtn.addEventListener("click", function() {
+            // Implement checkout functionality here
+            alert("Implement checkout functionality here!");
+        });
+    
+        // Event listener for decreasing the quantity
+        decrementQuantityBtn.addEventListener("click", function() {
+            // Implement quantity decrement logic
+        });
+    
+        // Event listener for increasing the quantity
+        incrementQuantityBtn.addEventListener("click", function() {
+            // Implement quantity increment logic
+        });
+    
+        // Render the initial cart items on page load
+        renderCart();
+        cartQuantitySpan.textContent = cartItems.reduce((total, item) => total + item.quantity, 0);
+    });
+    
+    </script>
+</body>
+
+</html>
