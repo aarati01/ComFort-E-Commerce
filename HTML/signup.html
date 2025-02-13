@@ -9,139 +9,205 @@ Nishan Sapkota
 Comfort +, E commerce website
  -->
 
- <!DOCTYPE html>
- <html lang="en">
- 
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../CSS/combine.css">
-   <link rel="icon" type="image/x-icon" href="../img/comfort.PNG"><!--Fav Icon-->
- 
-   <link rel="stylesheet" href="../CSS/style.css">
-   <script src="../JS/adi-script.js"></script>
-   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
- 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> <!-- Additional validation methods -->
-   <title>Document</title>
- </head>
- 
- <body>
-   <section id="header">
-     <a href="#"><img src="../img/comfort.PNG"></a>
-     <div>
-         <ul id="navbar">
-             <li><a href="../index.php">Home</a></li>
-             <li><a href="product.html">Products</a></li>
-             <li><a href="contact.html">Contact</a></li>
-             <li><a href="about.html">About</a></li>
-             <li><a class="active" href="user_info.php">Profile</a></li>
-           </ul>
-       </div>
-       <div id="mobile">
-           <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
- 
-       </div>
-   </section>
-   <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/combine.css" />
+    <link rel="icon" type="image/x-icon" href="../img/comfort.PNG" />
+    <!--Fav Icon-->
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../JS/adi-script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <!-- Additional validation methods -->
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="#"><img src="../img/comfort.png" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="user_info.php">Profile</a></li>
+        </ul>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </section>
+    <div class="container">
       <h1>Sign Up</h1>
-      
-     <form id="registration-form" action="../php/JQFormsAddUser.php" method="post">
-       <!-- Username -->
-       <label for="username">Username:</label>
-       <input type="text" class="page2" id="username" name="username"><br>
-       <!-- Email -->
-       <label for="email">Your email address:</label><br>
-       <input type="email" class="page2" id="email" name="email"><br>
-       <!-- First Name -->
-       <label for="first_name">First Name:</label><br>
-       <input type="text" class="page2" id="first_name" name="first_name"><br>
-       <!-- Last Name -->
-       <label for="last_name">Last Name:</label><br>
-       <input type="text" class="page2" id="last_name" name="last_name"><br>
-       <!-- Birth Date -->
-       <label for="datepicker">Birth Date:</label>
-       <input type="text" class="page2" id="datepicker" name="datepicker" required><br>
-       <!-- Address -->
-       <label for="address">Address:</label><br>
-       <input type="text" class="page2" id="address" name="address" required><br>
-       <!-- City -->
-       <label for="city">City:</label><br>
-       <input type="text" class="page2" id="city" name="city" required><br>
-       <!-- <label for="phone">Mobile phone:</label>
+
+      <form
+        id="registration-form"
+        action="../php/JQFormsAddUser.php"
+        method="post"
+      >
+        <!-- Username -->
+        <label for="username">Username:</label>
+        <input type="text" class="page2" id="username" name="username" /><br />
+        <!-- Email -->
+        <label for="email">Your email address:</label><br />
+        <input type="email" class="page2" id="email" name="email" /><br />
+        <!-- First Name -->
+        <label for="first_name">First Name:</label><br />
+        <input
+          type="text"
+          class="page2"
+          id="first_name"
+          name="first_name"
+        /><br />
+        <!-- Last Name -->
+        <label for="last_name">Last Name:</label><br />
+        <input
+          type="text"
+          class="page2"
+          id="last_name"
+          name="last_name"
+        /><br />
+        <!-- Birth Date -->
+        <label for="datepicker">Birth Date:</label>
+        <input
+          type="text"
+          class="page2"
+          id="datepicker"
+          name="datepicker"
+          required
+        /><br />
+        <!-- Address -->
+        <label for="address">Address:</label><br />
+        <input
+          type="text"
+          class="page2"
+          id="address"
+          name="address"
+          required
+        /><br />
+        <!-- City -->
+        <label for="city">City:</label><br />
+        <input type="text" class="page2" id="city" name="city" required /><br />
+        <!-- <label for="phone">Mobile phone:</label>
        <input class="left phone-group" class="page2" id="phone" name="phone" type="tel" placeholder="Mobile Phone">
        <span class="error"></span> -->
-       <label for="phone">Phone Number:</label><br><br>
-       <input type="tel" class="page2" id="phone" name="phone" placeholder="123-453-6783" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
-       <!-- Postal Code -->
-       <label for="postal_code">Postal Code:</label><br>
-       <input type="text" id="postal_code" class="page2" name="postal_code" placeholder="M1M 2Z9" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required><br>
-       <!-- Password -->
-       <label for="password">Choose a password:</label><br>
-       <input type="password" class="page2" id="password" name="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
-       <!-- <label>Password:</label>
+        <label for="phone">Phone Number:</label><br /><br />
+        <input
+          type="tel"
+          class="page2"
+          id="phone"
+          name="phone"
+          placeholder="123-453-6783"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        /><br /><br />
+        <!-- Postal Code -->
+        <label for="postal_code">Postal Code:</label><br />
+        <input
+          type="text"
+          id="postal_code"
+          class="page2"
+          name="postal_code"
+          placeholder="M1M 2Z9"
+          pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d"
+          required
+        /><br />
+        <!-- Password -->
+        <label for="password">Choose a password:</label><br />
+        <input
+          type="password"
+          class="page2"
+          id="password"
+          name="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+          required
+        /><br />
+        <!-- <label>Password:</label>
        <input type="password" id="myInput">
  
  
        <!-- Re-enter Password -->
-       <label for="re-password">Re-enter password:</label>
-       <input type="password" class="page2" id="re-password" name="re-password">
-       <!-- SignUp Button -->
-       <button type="submit">SignUp</button>
-   </form>
-   </div>
- <!-- Section for password validation messages -->
- <div id="message">
-     <h3>Password must contain the following:</h3>
-     <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-     <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-     <p id="number" class="invalid">A <b>number</b></p>
-     <p id="length" class="invalid">Minimum <b>8 characters</b></p>
- </div>
- 
- <!-- Login link -->
- <p>Have an account? <a href="login.html">Login now</a></p>
- 
- <!-- Footer section -->
- <footer class="section-p1">
-     <!-- Contact information column -->
-     <div class="col">
-         <h4>Contact</h4>
-         <p><strong>Address:</strong> 512 King street w, Toronto</p>
-         <p><strong>Phone:</strong> (+1)4376666669</p>
-         <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Sat</p>
-     </div>
-     <!-- Social media icons column -->
-     <div class="col col2">
-         <h4>Follow Us</h4>
-         <div class="icon">
-             <i class="fa fa-facebook" aria-hidden="true"></i>
-             <i class="fa fa-instagram" aria-hidden="true"></i>
-             <i class="fa fa-twitter" aria-hidden="true"></i>
-             <i class="fa fa-youtube-play" aria-hidden="true"></i>
-         </div>
-     </div>
-     <!-- About information column -->
-     <div class="col">
-         <h4>About</h4>
-         <a href="#">About us</a>
-         <a href="#">Privacy Policy</a>
-         <a href="#">Terms & Conditions</a>
-         <a href="#">Contact Us</a>
-     </div>
-     <!-- Copyright information -->
-     <div class="copyright">
-         <p>&copy; 2024, Comfort+</p>
-     </div>
- </footer>
- 
- </body>
- <script src="../JS/Register.js"></script>
- </html>
+        <label for="re-password">Re-enter password:</label>
+        <input
+          type="password"
+          class="page2"
+          id="re-password"
+          name="re-password"
+        />
+        <!-- SignUp Button -->
+        <button type="submit">SignUp</button>
+      </form>
+    </div>
+    <!-- Section for password validation messages -->
+    <div id="message">
+      <h3>Password must contain the following:</h3>
+      <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+      <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+      <p id="number" class="invalid">A <b>number</b></p>
+      <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+
+    <!-- Login link -->
+    <p>Have an account? <a href="login.html">Login now</a></p>
+
+    <!-- Footer section -->
+    <footer class="section-p1">
+      <!-- Contact information column -->
+      <div class="col">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 512 King street w, Toronto</p>
+        <p><strong>Phone:</strong> (+1)4376666669</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Sat</p>
+      </div>
+      <!-- Social media icons column -->
+      <div class="col col2">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
+      </div>
+      <!-- About information column -->
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <!-- Copyright information -->
+      <div class="copyright">
+        <p>&copy; 2024, Comfort+</p>
+      </div>
+    </footer>
+  </body>
+  <script src="../JS/Register.js"></script>
+</html>

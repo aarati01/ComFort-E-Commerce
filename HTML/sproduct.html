@@ -11,23 +11,32 @@ Comfort +, E commerce website
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/cart.css">
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/cart.css" />
     <!-- Fotorama -->
-    <link href="../CSS/fotorama.css" rel="stylesheet">
+    <link href="../CSS/fotorama.css" rel="stylesheet" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- jQuery UI CSS -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="../CSS/jquery-ui-adi.css">
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="../CSS/jquery-ui-adi.css" />
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- jQuery UI -->
@@ -37,217 +46,244 @@ Comfort +, E commerce website
     <!-- Custom Scripts -->
     <script src="../JS/adi-script.js"></script>
     <script src="../JS/cart.js"></script>
-</head>
-<body>
-    
+  </head>
+  <body>
     <section id="header">
-        <a href="#"><img src="../img/comfort.PNG"></a>
-        <div>
-            <ul id="navbar">
-                <li><a href="../index.php">Home</a></li>
-                <li><a class="active" href="product.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="user_info.php">Profile</a></li>
-                <li><i id="cart-icon" class="fa fa-shopping-bag" aria-hidden="true"></i><span id="cart-quantity"></span></li>
-            </ul>
-        </div>
-        <div id="mobile">
-            <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
-
-        </div>
+      <a href="#"><img src="../img/comfort.png" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="../index.php">Home</a></li>
+          <li><a class="active" href="product.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="user_info.php">Profile</a></li>
+          <li>
+            <i id="cart-icon" class="fa fa-shopping-bag" aria-hidden="true"></i
+            ><span id="cart-quantity"></span>
+          </li>
+        </ul>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+      </div>
     </section>
     <!-- HTML structure for the cart modal -->
     <div id="cartModal" class="modal">
-        <div class="modal-content">
-            <span id="closeCartModalBtn" class="close">&times;</span>
-            <h2>Cart</h2>
-            <div id="cartItems" class="cart-items">
-                <!-- Cart items will be dynamically added here -->
-            </div>
-            <div id="cartActions" class="cart-actions">
-                <button id="decrementQuantityBtn">-</button>
-                <button id="incrementQuantityBtn">+</button>
-            </div>
-            <div class="cart-buttons">
-                <button id="checkoutBtn">Checkout</button>
-                <button id="closeCartBtn">Close</button>
-            </div>
+      <div class="modal-content">
+        <span id="closeCartModalBtn" class="close">&times;</span>
+        <h2>Cart</h2>
+        <div id="cartItems" class="cart-items">
+          <!-- Cart items will be dynamically added here -->
         </div>
-        <div id="totalPriceContainer" class="total-price-container">
-            <hr>
-            <p>Total Price: <span id="totalPrice">0.00</span></p>
+        <div id="cartActions" class="cart-actions">
+          <button id="decrementQuantityBtn">-</button>
+          <button id="incrementQuantityBtn">+</button>
         </div>
-        
+        <div class="cart-buttons">
+          <button id="checkoutBtn">Checkout</button>
+          <button id="closeCartBtn">Close</button>
+        </div>
+      </div>
+      <div id="totalPriceContainer" class="total-price-container">
+        <hr />
+        <p>Total Price: <span id="totalPrice">0.00</span></p>
+      </div>
     </div>
 
-      
-
     <section id="pro-details" class="section-p1">
-        <!-- Single Product Images -->
-        <div class="single-pro-image fotorama" data-autoplay="true" height="60%" width="100%" id="MainImg">
-            <!-- Product Images -->
-            <img src="../img/man1.jpg">
-            <img src="../img/man1.jpg">
-            <img src="../img/man1.jpg">
+      <!-- Single Product Images -->
+      <div
+        class="single-pro-image fotorama"
+        data-autoplay="true"
+        height="60%"
+        width="100%"
+        id="MainImg"
+      >
+        <!-- Product Images -->
+        <img src="../img/man1.jpg" />
+        <img src="../img/man1.jpg" />
+        <img src="../img/man1.jpg" />
+      </div>
+
+      <!-- Single Product Details -->
+      <div class="single-pro-details">
+        <!-- Brand Name -->
+        <h6>comfort+</h6>
+        <!-- Product Name -->
+        <h4>Air Max - Stylish White Mesh Sneakers</h4>
+        <!-- Product Price -->
+        <h2>$79.00</h2>
+        <div class="demo">
+          <!-- Size Selection Form -->
+          <form action="#">
+            <fieldset>
+              <label for="number">Select Size</label>
+              <select name="number" id="number">
+                <option disabled selected>Please pick one</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+            </fieldset>
+          </form>
         </div>
-    
-        <!-- Single Product Details -->
-        <div class="single-pro-details">
-            <!-- Brand Name -->
-            <h6>comfort+</h6>
-            <!-- Product Name -->
-            <h4>Air Max - Stylish White Mesh Sneakers</h4>
-            <!-- Product Price -->
-            <h2>$79.00</h2>
-            <div class="demo">
-                <!-- Size Selection Form -->
-                <form action="#">
-                    <fieldset>
-                        <label for="number">Select Size</label>
-                        <select name="number" id="number">
-                            <option disabled selected>Please pick one</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select>
-                    </fieldset>
-                </form>
-            </div>
-            <!-- Quantity Input -->
-            <input type="number" value="1" min="1" step="1" data-available-quantity="99">
-            <!-- Add To Cart Button -->
-            <button id="addToCartBtn">Add To Cart</button>
-            <!-- Available Quantity Information -->
-            <span id="availableQuantity">Available: 99</span>
-    
-            <!-- Product Details Heading -->
-            <h4>Product Details</h4>
-            <!-- Product Description -->
-            <p>Introducing "Comfort+" sport shoes – the epitome of style and comfort.<br>
-                Engineered with cutting-edge technology, these shoes offer unparalleled support<br> 
-                and durability, making them perfect for any active lifestyle. With a sleek design<br>
-                 and versatile colors, "Comfort+" shoes elevate your look effortlessly, ensuring<br>
-                 every step is a confident stride towards excellence.</p>
-        </div>
+        <!-- Quantity Input -->
+        <input
+          type="number"
+          value="1"
+          min="1"
+          step="1"
+          data-available-quantity="99"
+        />
+        <!-- Add To Cart Button -->
+        <button id="addToCartBtn">Add To Cart</button>
+        <!-- Available Quantity Information -->
+        <span id="availableQuantity">Available: 99</span>
+
+        <!-- Product Details Heading -->
+        <h4>Product Details</h4>
+        <!-- Product Description -->
+        <p>
+          Introducing "Comfort+" sport shoes – the epitome of style and
+          comfort.<br />
+          Engineered with cutting-edge technology, these shoes offer
+          unparalleled support<br />
+          and durability, making them perfect for any active lifestyle. With a
+          sleek design<br />
+          and versatile colors, "Comfort+" shoes elevate your look effortlessly,
+          ensuring<br />
+          every step is a confident stride towards excellence.
+        </p>
+      </div>
     </section>
-    
 
     <section id="trend" class="section-p1">
-        <!-- Featured Products Heading -->
-        <h2>Featured Products</h2>
-        <!-- Product Container -->
-        <div class="pro-container" onclick="window.location.href='sproduct.html';">
-            <!-- Product 1 -->
-            <div class="pro">
-                <img src="../img/shoe6.jpg">
-                <!-- Product Description -->
-                <div class="descrip">
-                    <span>comfort+</span>
-                    <!-- Product Title -->
-                    <h5>Heel Haven: A play on “heel” and “haven,” suggesting a sanctuary for shoe lovers.</h5>
-                    <!-- Star Rating -->
-                    <div class="star">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <!-- Product Price -->
-                    <h4>$129</h4>
-                </div>
+      <!-- Featured Products Heading -->
+      <h2>Featured Products</h2>
+      <!-- Product Container -->
+      <div
+        class="pro-container"
+        onclick="window.location.href='sproduct.html';"
+      >
+        <!-- Product 1 -->
+        <div class="pro">
+          <img src="../img/shoe6.jpg" />
+          <!-- Product Description -->
+          <div class="descrip">
+            <span>comfort+</span>
+            <!-- Product Title -->
+            <h5>
+              Heel Haven: A play on “heel” and “haven,” suggesting a sanctuary
+              for shoe lovers.
+            </h5>
+            <!-- Star Rating -->
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
             </div>
-            <!-- Product 2 -->
-            <div class="pro">
-                <img src="../img/shoe5.jpg">
-                <div class="descrip">
-                    <span>comfort+</span>
-                    <h5>StrideStyle: Combining “stride” with “style” to highlight both functionality and fashion.</h5>
-                    <div class="star">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <h4>$199</h4>
-                </div>
-            </div>
-            <!-- Product 3 -->
-            <div class="pro">
-                <img src="../img/shoe8.jpg">
-                <div class="descrip">
-                    <span>comfort+</span>
-                    <h5>Tied Elegance: Emphasizes the sophistication and attention to detail in your shoe collection.</h5>
-                    <div class="star">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <h4>$69</h4>
-                </div>
-            </div>
-            <!-- Product 4 -->
-            <div class="pro">
-                <img src="../img/shoe7.jpg">
-                <div class="descrip">
-                    <span>comfort+</span>
-                    <h5>Footwear Craftsmanship: Highlights the skill and care put into creating each pair of shoes</h5>
-                    <div class="star">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <h4>$89</h4>
-                </div>
-            </div>
+            <!-- Product Price -->
+            <h4>$129</h4>
+          </div>
         </div>
+        <!-- Product 2 -->
+        <div class="pro">
+          <img src="../img/shoe5.jpg" />
+          <div class="descrip">
+            <span>comfort+</span>
+            <h5>
+              StrideStyle: Combining “stride” with “style” to highlight both
+              functionality and fashion.
+            </h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>$199</h4>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="pro">
+          <img src="../img/shoe8.jpg" />
+          <div class="descrip">
+            <span>comfort+</span>
+            <h5>
+              Tied Elegance: Emphasizes the sophistication and attention to
+              detail in your shoe collection.
+            </h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>$69</h4>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="pro">
+          <img src="../img/shoe7.jpg" />
+          <div class="descrip">
+            <span>comfort+</span>
+            <h5>
+              Footwear Craftsmanship: Highlights the skill and care put into
+              creating each pair of shoes
+            </h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>$89</h4>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <footer class="section-p1">
-        <!-- Contact Information Column -->
-        <div class="col">
-            <h4>Contact</h4>
-            <p><strong>Address:</strong> 512 King street w, Toronto</p>
-            <p><strong>Phone:</strong> (+1)4376666669</p>
-            <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Sat</p>
+      <!-- Contact Information Column -->
+      <div class="col">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 512 King street w, Toronto</p>
+        <p><strong>Phone:</strong> (+1)4376666669</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Sat</p>
+      </div>
+      <!-- Follow Us Column -->
+      <div class="col col2">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
         </div>
-        <!-- Follow Us Column -->
-        <div class="col col2">
-            <h4>Follow Us</h4>
-            <div class="icon">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            </div>
-        </div>
-        <!-- About Us Column -->
-        <div class="col">
-            <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <!-- Copyright Information -->
-        <div class="copyright">
-            <p>&copy; 2024, Comfort+</p>
-        </div>
+      </div>
+      <!-- About Us Column -->
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <!-- Copyright Information -->
+      <div class="copyright">
+        <p>&copy; 2024, Comfort+</p>
+      </div>
     </footer>
-    
-
-
-</body>
+  </body>
 </html>

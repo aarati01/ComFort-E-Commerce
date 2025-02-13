@@ -841,7 +841,7 @@ footer i:hover {
 </head>
 <body>
 <section id="header">
-        <a href="#"><img src="../img/comfort.PNG"></a>
+        <a href="#"><img src="../img/comfort.png"></a>
         <div>
             <ul id="navbar">
                 <li><a href="/">Home</a></li>
