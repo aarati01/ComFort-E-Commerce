@@ -62,14 +62,14 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="/JS/adi-script.js"></script>
+    <script src="./JS/adi-script.js"></script>
     <link rel="stylesheet" href="./CSS/cart.css">
     <script src="./JS/cart.js"></script>
 </head>
 <body>
 <section id="header">
     <!-- Logo -->
-    <a href="#"><img src="./img/comfort.PNG"></a>
+    <a href="#"><img src="./img/comfort.png"></a>
     <!-- Navigation Bar -->
     <div>
         <ul id="navbar">
